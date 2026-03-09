@@ -1,0 +1,14 @@
+.pio/build/teensy41/lib*
+.pio/build/teensy41/Framework*
+.pio/build/teensy41/src/
+.pio/libdeps/
+.pio/
+.vscode/
+archive/
+*.bak
+docs/1553 reference/
+*.dwl
+*.dwl2
+*.dbk
+lib/
+
