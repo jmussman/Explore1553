@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 3: Simulate a physical bus network and check its characteristics
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 ## Hardware Required
 

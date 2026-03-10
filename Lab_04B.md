@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 4B: Set up and test the microcontroller
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 ## Hardware Required
 

@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 1: Research the following questions:
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 As a group, or individually, research the following questions:
 

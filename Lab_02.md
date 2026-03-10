@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 2: Build a bus
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 ## Part 1: Sketch a compliant A/B bus for 6 RTs
 

@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 4: Explore hexadecimal conversions to/from decimal and parity
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 ## Part 1: The BC needs to send a command to the Flight Computer
 

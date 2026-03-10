@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 5: Use the microcontroller to send an RT to BC message
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 ## Hardware Required
 

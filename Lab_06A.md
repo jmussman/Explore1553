@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 6A: Build a bus controller and an application launches the bus controller
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 ## Hardware Required
 
