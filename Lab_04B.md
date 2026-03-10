@@ -1,4 +1,8 @@
-# Explore1553 Lab 4: Set up and test the microcontroller
+[//]: # (Lab_04B.md)
+[//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
+[//]: #
+
+# Explore1553 Lab 4B: Set up and test the microcontroller
 
 \[ [Link to Lab contents](./readme.md#labs) \]
 
@@ -6,7 +10,7 @@
 
 1. 6-inch breadboard (if the Teensy 4.1 is already mounted that is OK).
     *Do not touch this without anti-static protection!*
-1. Saleae-type Logic Analyzer - technically any analyzer will work but you are on your own with a different analyzer and/or software.
+1. Saleae-type Logic Analyzer - technically any analyzer will work, but you are on your own with a different analyzer and/or software.
 1. A small zip-tie if you are working by yourself.
 1. Medium-length breadboard jumper wires.
 
@@ -14,10 +18,11 @@
 
 ### Part 1: Software Setup
 
-1. On the computer install the Saleae Logic 2 analyzer software if it has not been installed. Download it from [Saleae](https://www.saleae.com/downloads).
-1. Install Arduino IDE if it has yet been installed. Download it from [Arduino Software](https://www.arduino.cc/en/software/).
-1. Open Arduino IDE.
-1. Navigate to the menu **File > Preferences** (Windows/Linux) or **Arduino IDE > Settings** (macOS).
+1. Open the Logic 2 analyzer program on the computer.
+    * If necessary install the Saleae Logic 2 analyzer software, download it from [Saleae](https://www.saleae.com/downloads).
+1. Open the Arduino IDE program on the computer.
+    *  If necessary install the Arduino IDE, download it from [Arduino Software](https://www.arduino.cc/en/software/).
+1. In the Arduino IDE navigate to the menu **File > Preferences** (Windows/Linux) or **Arduino IDE > Settings** (macOS).
 1. In the **Additional boards manager URLs field**, paste this link:
 https://www.pjrc.com/teensy/package_teensy_index.json.
     This will send Ardunio IDE to Paul Stoffregen's package supporting the Teensy development board located at [PJRC](https://www.pjrc.com/)

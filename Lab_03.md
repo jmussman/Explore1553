@@ -1,4 +1,8 @@
-# Explore1553 Lab 3: simulate a physical bus network and check its characteristics
+[//]: # (Lab_03.md)
+[//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
+[//]: #
+
+# Explore1553 Lab 3: Simulate a physical bus network and check its characteristics
 
 \[ [Link to Lab contents](./readme.md#labs) \]
 

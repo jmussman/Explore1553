@@ -1,4 +1,8 @@
-# Explore1553 Lab 3: Set up and test the Teensy 4.1 microcontroller
+[//]: # (Lab_05.md)
+[//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
+[//]: #
+
+# Explore1553 Lab 5: Use the microcontroller to send an RT to BC message
 
 \[ [Link to Lab contents](./readme.md#labs) \]
 
@@ -13,6 +17,7 @@
 
 The Arduino IDE looks for folders under the *Documents/Arduino/libraries* and automatically loads them to support
 the programs it is compiling (and loading).
+This provides a scenario where libraries can be built, shared, and added to the IDE environment when they are required.
 
 1. Find the green *Code* button at the top of this page,
     or visit [https://github.com/jmussman/Explore1553](https://github.com/jmussman/Explore1553) and
@@ -30,14 +35,14 @@ the programs it is compiling (and loading).
 1. Select *Text File* as the type.
 1. Copy and paste this text into the file:
     ```text
-    name=Flex1553
+    name=Explore1553
     version=1.0.0
-    author=bsundahl1
-    maintainer=bsundahl1
-    sentence=A library for MIL-STD-1553 communication using Teensy 4.1 FlexIO.
-    paragraph=This library enables high-speed 1553 protocol handling by leveraging the specialized FlexIO hardware on the IMXRT1060 processor.
+    author=jmussman
+    maintainer=jmussman
+    sentence=A modified version of the Flex1553 (https://github.com/bsundahl1/Flex1553) library supporting the Explore1553 sandbox.
+    paragraph=The Arduino library enables high-speed 1553 protocol handling by leveraging the specialized FlexIO hardware on the IMXRT1060 processor.
     category=Communication
-    url=https://github.com/bsundahl1/Flex1553
+    url=https://github.com/bsundahl1/Explore1553
     architectures=teensy4
     includes=Flex1553.h
     ```
@@ -131,6 +136,7 @@ the programs it is compiling (and loading).
 1. Click the *Run* button to compile and load the program.
 1. In Logic 2, run a capture.
     What is different about the signal captured this time?
+1. Decode the command word and explain its content.
 1. Decode the data words: what values do they carry?
 
 <br><br>![Stop](./.assets/stop_small.png) **Congratulations, you have completed this lab!**
