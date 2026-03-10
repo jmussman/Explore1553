@@ -4,7 +4,7 @@
 
 # Explore1553 Lab 4: Build an application that interfaces with the bus controller
 
-\[ [Link to Lab contents](./readme.md#labs) \]
+\[ [Link to Lab contents](./README.md#labs) \]
 
 Be aware that this lab has the potential to create a bus where the impedance is so high that the 3.3 volt signal
 is not recognizable on the receiving end.
