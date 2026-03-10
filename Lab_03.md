@@ -43,13 +43,13 @@ When using non-classroom equipment (your own) you can place the Teensy when you 
     The valley in the middle breaks the horizontal connection into a left and right side.
     The vertical columns on the main board are not connected, but the letters a-j can
     be used to refer to a particular socket in a particular row (column first): e.g. A10 or B10.
-    <br><br>![Breadboard](./.assets/Lab_01/breadboard.jpg)
+    <br><br>![Breadboard](./.assets/Lab_03/breadboard.jpg)
 1. Pick a short breadboard jumper wire.
     The color does not really matter, but we like blue because it is the center wire in a triaxial cable.
 1. Put one end of the wire in E10 and other end in F10 to electrically connect the two halves of the row.
 1. Pick another jumper wire (white is the other triaxial color) and connect E11 and F11.
     Now row 11 is also connected all the way across.
-    <br><br>![BBridged](./.assets/Lab_01/bridged.jpg)
+    <br><br>![BBridged](./.assets/Lab_03/bridged.jpg)
 1. Plug the test leads into the multimeter.
     The positive lead (often red) will go in the socket marked for Ohms (&Omega;).
     The negative lead will go to the Common Ground.
@@ -57,7 +57,7 @@ When using non-classroom equipment (your own) you can place the Teensy when you 
     If there are alligator-clips, put jumper wires (any color, but we like red and black) into H10 and H11 and connect the
     clips to them.
     If the leads have neither pin-tips or alligator-clips, put the jumper wires in place and the leads will have to be touched to the wires manually to get a reading.
-    <br><br>![Multimeter](./.assets/Lab_01/multimeter.jpg)
+    <br><br>![Multimeter](./.assets/Lab_03/multimeter.jpg)
 1. Turn the multimeter to &Omega; setting.
     If your multimeter is scaled, put it at a low setting where values like 40 &Omega; and 80 &Omega; will be visible:
 1. Take a reading.
@@ -85,13 +85,13 @@ When using non-classroom equipment (your own) you can place the Teensy when you 
     The example in the picture had a little loss, it is: 81 &Omega;
     This was a five-band resistor.
     1% of 82 is .82 and a 1% loss would be 81.18 &Omega;, so 81.6 &Omega; is well within tolerance.
-    <br><br>![81.6 &Omega;](./.assets/Lab_01/81.6V.jpg)
+    <br><br>![81.6 &Omega;](./.assets/Lab_03/81.6V.jpg)
 1. That only fixed half of the problem.
     The bus needs to be terminated at both ends.
     Add another 82 &Omega; resistor to jump J10 to J11.
 1. Take another reading, what do you get?
 1. The way electrical circuits work, the value should be cut in half: 40.8 &Omega;:
-    <br><br>![40.8 &Omega;](./.assets/Lab_01/40.8V.jpg)
+    <br><br>![40.8 &Omega;](./.assets/Lab_03/40.8V.jpg)
 
     A MIL-STD-1553 bus uses 78 &Omega; terminators (resistors);.
     The lab chose 82 &Omega; resistors simply because it is very difficult to find the 78 &Omega; resistors.
@@ -102,7 +102,7 @@ When using non-classroom equipment (your own) you can place the Teensy when you 
 1. An &Omega; reading of zero or close to zero indicates a complete connection without any
     significant resistance on the wire.
     In other words, a short-circuit!
-    <br><br>![Short Circuit](./.assets/Lab_01/short-circuit.jpg)
+    <br><br>![Short Circuit](./.assets/Lab_03/short-circuit.jpg)
 1. Remove the short-circuit in C10-C11.
 
 ## Conclusions

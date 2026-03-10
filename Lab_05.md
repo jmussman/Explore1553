@@ -25,7 +25,7 @@ This provides a scenario where libraries can be built, shared, and added to the 
 
 1. Click the green button to expand the *Code dialog*.
 1. Make sure the *Local* tab is selected and click on the *Download ZIP* option:
-    <br><br>![GitHub Code Button](./.assets/Lab_02/github-code-button.png)
+    <br><br>![GitHub Code Button](./.assets/Lab_05/github-code-button.png)
 1. Extract the zip file to the *Documents/Arduino/libraries* folder on the computer.
 1. Rename the extracted folder from *Explore1553-master* to just *Flex1553*.
 1. Open the Viusal Studio Code application.
@@ -104,14 +104,14 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. When Arduino IDE reopens the window make sure that the correct microcontroller is selected.
 1. Use the **Run** button to compile and load the program.
     This program will keep repeating the command word over and over again.
-    <br><br>![Flex1553 Single Command](./.assets/Lab_02/Flex1553-one-command.jpg)
+    <br><br>![Flex1553 Single Command](./.assets/Lab_05/Flex1553-one-command.jpg)
 1. In Logic 2 run a capture.
 1. Zoom in to look at one signal group in the capture; remember the word keeps repeating.
     The FlexIO module is outputting the differential signal on pin 3, notice it is a mirror image of the
     channel 1 signal.
     The microcontroller cannot really handle that, so it is a positive signal when it should be negative,
     but that can be fixed (and the voltage bumped) in electronics around the microcontroller if it was interfacing to a real bus.
-    <br><br>![Logic 2 Single Command](./.assets/Lab_02/Logic2-single-command.png)
+    <br><br>![Logic 2 Single Command](./.assets/Lab_05/Logic2-single-command.png)
 1. Use the *Range Measurement* tool to check the length of the signal.
     What was found? Is that what was expected?
 

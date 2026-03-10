@@ -29,7 +29,7 @@ https://www.pjrc.com/teensy/package_teensy_index.json.
     (He designed the board and the Arduino library for it).
 1. Click OK.
 1. Find the *Board Manager* icon in the *Activity Bar* on the left of the IDE window and click it.
-<br>![Teensy Install](./.assets/Lab_02/teensy-install.png)
+<br>![Teensy Install](./.assets/Lab_04B/teensy-install.png)
 1. Enter *Teensy* in the search bar.
 1. Make sure to select the Teensy board package by Paul Strofrregen.
 1. Click the INSTALL button.
@@ -74,7 +74,7 @@ When using non-classroom equipment (your own) put the Teensy in place in step 2.
 1. What is the voltage on the 3V3 pin?
     If it is about 3.3 volts the microcontroller board has the right voltage on its power rail,
     proceed to the next step.
-    <br><br>![Microcontroller Power Rail Check](./.assets/Lab_02/3V3.jpg)
+    <br><br>![Microcontroller Power Rail Check](./.assets/Lab_04B/3V3.jpg)
 1. Disconnect the multimeter, it is no longer required.
 1. Connect a jumper wire to H60 for the microcontroller ground.
 1. Connect a jumper wire to H57 for the output signal (microcontroller pin 2).
@@ -96,7 +96,7 @@ When using non-classroom equipment (your own) put the Teensy in place in step 2.
 1. If the rainbow cable was just set up, most of the ribbon cables provided with the Saleae-style Logic Analyzer have the black wire on the wrong side.
     Crossing it over to channel 1 puts strain on it.
     "Roll" the cable and use the zip about 0.5 inches (1.25cm) back to relieve that strain:
-    <br><br>![Logic Analyzer Strain Relief](./.assets/Lab_02/logic-analyzer-cable.jpg)
+    <br><br>![Logic Analyzer Strain Relief](./.assets/Lab_04B/logic-analyzer-cable.jpg)
 1. Connect the ground wire from H60 to the white wire on the logic analyzer.
 1. Connect the data wire from H57 to the black wire on the logic analyzer.
 1. Connect the USB cable from the computer to the logic analyzer to power it on.
@@ -110,7 +110,7 @@ The Ardunio IDE is used to compile C/C++ code using the Gnu C++ compiler, and up
 1. In the Arduino IDE pull down the board selection list and pick the Teensy.
     The port number should say "usb:<something>".
     Do not connect to the Teensy and pick another port, like a Bluetooth port if it is shown.
-    <br><br>![Select Teensy](./.assets/Lab_02/teensy-choose-device.png)
+    <br><br>![Select Teensy](./.assets/Lab_04B/teensy-choose-device.png)
 1. Copy and paste the following program into the *sketch* file in the editor window,
     replacing the empty *setup* and *loop* functions:
     ```cpp
@@ -145,7 +145,7 @@ The Ardunio IDE is used to compile C/C++ code using the Gnu C++ compiler, and up
     The period of the wave is 1µs, 0.5µs at 1.5 volts and 0.5µu at 0 volts.
     If you do not have a scope, no worries.
     Capturing that wave with the logic analyzer is what comes next!
-    <br><br>![Teensy Square Wave](./.assets/Lab_02/teensy-running.jpg)
+    <br><br>![Teensy Square Wave](./.assets/Lab_04B/teensy-running.jpg)
 
 
 ### Part 5: Capture the Output.
@@ -156,15 +156,15 @@ Logic 2 works a bit like an oscilloscope, it can capture up to five channels sim
 
 1. On the *Side Panel* to the right of the window are the tool icons.
     Click the first icon, *Device Settings*.
-    <br><br>![Logic2 Capture Period](./.assets/Lab_02/logic2-capture-period.png)
+    <br><br>![Logic2 Capture Period](./.assets/Lab_04B/logic2-capture-period.png)
 1. Select the *Timer* button in the middle of the settings,
     and set *Stop recording after* to 1 second.
 1. Along the toolbar at the top, click the first icon, the blue arrow *Run* button.
 1. You will probably see one second of capture looking like this, because the zoom is all the way out:
-    <br>![Logic2 One Second Capture](./.assets/Lab_02/Logic2-1second-capture.png)
+    <br>![Logic2 One Second Capture](./.assets/Lab_04B/Logic2-1second-capture.png)
 1. Use the mouse wheel or the up-arrow key to zoom in on the captured data.
     Go deep until you can see the square wave, it only a frequency of only 1µs.
-    <br>![pulseview examine](./.assets/Lab_02/logic2-square-wave.png)
+    <br>![pulseview examine](./.assets/Lab_04B/logic2-square-wave.png)
 1. Click on the tool button with a "3" over an "I-beam", this is the *Range* button.
 1. Click at the beginning of a period where the voltage is at the top (3.3 volts),
     and then drag the mouse to the end where the voltage stops being low (0 volts).
