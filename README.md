@@ -77,14 +77,12 @@ This software is all free and all support Microsoft Windows, Apple MacOS, and Li
 
 ## Labs
 
-* [Lab 1: Research the following questions](./Lab_01.md).
-* [Lab 2: Build a bus](./Lab_02.md)
-* [Lab 3: Simulate a bus network and check its characteristics](./Lab_03.md)
-* [Lab 4A: Explore hexadecimal conversions to/from decimal and parity](./Lab_04A.md)
-* [Lab 4B: setup and test the microcontroller](./Lab_04B.md)
-* [Lab 5: Use the microcontroller to send an RT to BC message](./Lab_05.md)
-* [Lab 6A: Build a bus controller and an application launches the bus controller](./Lab_06A.md)
-* [Lab 6B: Experiment with two microcontrollers, one provides the BC and the other as the RT](./Lab_06B.md)
+* [Lab 1: Introduction](./Lab_01.md).
+* [Lab 2: Bus Architecture](./Lab_02.md)
+* [Lab 3: Media Layer](./Lab_03.md)
+* [Lab 4: Physical Layer](./Lab_04.md)
+* [Lab 5: Data Link Layer](./Lab_05.md)
+* [Lab 6: Application Layer](./Lab_06.md)
 
 ## License
 

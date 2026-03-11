@@ -2,18 +2,46 @@
 [//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
 [//]: #
 
-# Explore1553 Lab 5: Use the microcontroller to send an RT to BC message
+# Lab 5:
 
 \[ [Link to Lab contents](./README.md#labs) \]
 
-## Hardware Required
 
-1. The breadboard setup from the completion of Lab 2.
+## Build words and calculate parity
+
+1. Build the BC command word from the following values and calculate the parity:
+    * RT address 03
+    * Receive data
+    * Subaddress: 04
+    * Word count: 16
+
+1. Build the BC command word from the following values and calculate the parity:
+    * RT address 30
+    * Transmit data
+    * Subaddress: 01
+    * Word count: 01
+1. Build the BC command word from the following values and calculate the parity:
+    * RT address: 07
+    * Status: busy Flag Set
+
+Answer key:
+
+3.1: **00011 0 00100 10000, 1**<br>
+3.2: **11110 1 00001 00001, 0**<br>
+3.3: **00111 0 00000 1 0001, 0**<br>
+
+
+## Use the microcontroller to send an RT to BC message
+
+
+### Hardware Required
+
+1. The breadboard setup from the completion of Lab 4B.
     *Do not touch this without anti-static protection!*
 
-## Lab Steps
+### Lab Steps
 
-### Part 1: Add the Explore1553 library to Arduino IDE
+#### Part 1: Add the Explore1553 library to Arduino IDE
 
 The Arduino IDE looks for folders under the *Documents/Arduino/libraries* and automatically loads them to support
 the programs it is compiling (and loading).
@@ -50,7 +78,7 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. Name file *library.properties* (no other extension).
 1. Save the file.
 
-### Part 2: Add a channel to the logic analyz=er
+#### Part 2: Add a channel to the logic analyz=er
 
 1. Make sure the microcontroller and the logic analyzer are not powered.
 
@@ -58,7 +86,7 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. Connect this to the brown wire on the logic analyzer (channel 2).
 1. Power on the microcontroller and the logic analyzer.
 
-### Part 2: Transmit an MIL-STD-1553 Command Word
+#### Part 3: Transmit an MIL-STD-1553 Command Word
 
 1. In Arduino IDE navigate and click **File > New Sketch**.
 
@@ -115,7 +143,7 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. Use the *Range Measurement* tool to check the length of the signal.
     What was found? Is that what was expected?
 
-### Part 4: Decode the Command Word
+#### Part 4: Decode the Command Word
 
 1. First, What kind of word does the Sync indicate this is?
 
@@ -123,7 +151,7 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. Verify the checksum is correct, if it is not then the word is garbage.
 1. Because this is a command or status word, figure out what the bits mean.
 
-### Part 5: BC to RT
+#### Part 5: BC to RT
 
 1. The previous command was RT to BC, initiated by the BC of course.
     Navigate to **File > Save As...** and save the file with as *BC_RC_Repeat_Command*.

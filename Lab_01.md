@@ -2,7 +2,9 @@
 [//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
 [//]: #
 
-# Explore1553 Lab 1: Research the following questions:
+# Lab 1: Introduction
+
+## Research the following questions:
 
 \[ [Link to Lab contents](./README.md#labs) \]
 

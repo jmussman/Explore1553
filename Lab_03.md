@@ -2,28 +2,30 @@
 [//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
 [//]: #
 
-# Explore1553 Lab 3: Simulate a physical bus network and check its characteristics
+# Lab 3: Media Layer
+
+## Simulate a physical bus network and check its characteristics
 
 \[ [Link to Lab contents](./README.md#labs) \]
 
-## Hardware Required
+### Hardware Required
 
-1. 6-inch breadboard (if the Teensy 4.1 is already mounted that is OK).
-    *Do not touch this without anti-static protection!*
+1. 6-inch breadboard (if the microcontroler is already mounted that is OK).
+    *Do not touch this equipment without anti-static protection!*
 1. Short-length breadboard jumper wires.
-1. Two 81-ohm resistors.
+1. Two 81 &Omega; resistors.
 1. Multimeter and test leads (pin-tipped leads are preferred).
 
-## Lab Steps
+### Lab Steps
 
-Note: in the classroom environment the breadboards are usually set up before class with the Teensy 4.1 microcontrollers put in place.
-This is simply to avoid over-handling the Teensy and breaking pins, etc.
-When using non-classroom equipment (your own) you can place the Teensy when you reach the corresponding lab.
+Note: in the classroom environment the breadboards are usually set up before class with the microcontrollers put in place
+to avoid over-handling the component and breaking pins, etc.
+When using non-classroom equipment (your own) you can place the microcontroller when you reach the corresponding lab.
 
 1. Set up the anti-static mat and connect the ground cable to the same electrical ground as the power
     for the computer.
     It does not have to be the same power receptacle, just on the same electrical circuit.
-    Use a tester to see if the ground pin in the outlet is actually connected to ground; if it is not
+    When outside of a classroom use a tester to see if the ground pin in the outlet is actually connected to ground; if it is not
     find another circuit for the computer and the anti-static mat.
     This is important, because the electronics will be grounded to the computer when the USB
     cables are plugged in, the mat needs to be grounded to the same circuit, and an ungrounded circuit
@@ -105,7 +107,7 @@ When using non-classroom equipment (your own) you can place the Teensy when you 
     <br><br>![Short Circuit](./.assets/Lab_03/short-circuit.jpg)
 1. Remove the short-circuit in C10-C11.
 
-## Conclusions
+### Conclusions
 
 * When testing a cable all by itself, infinite resistance is a good thing: no short circuits!
 * If the reading is close to 0 &Omega;, that means something is shorted out.
@@ -118,6 +120,7 @@ When using non-classroom equipment (your own) you can place the Teensy when you 
 <br><br>![Stop](./.assets/stop_small.png) **Congratulations, you have completed this lab!**
 
 <br><br>
+
 ## Classroom Experiment (Optional)
 
 In the classroom as the whole class group, or on your own if you have the equipment, expand on the lab by checking what happens on

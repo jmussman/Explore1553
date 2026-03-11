@@ -2,21 +2,41 @@
 [//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
 [//]: #
 
-# Explore1553 Lab 4B: Set up and test the microcontroller
+# Lab 4: Physical (Signaling) Layer
+
+## Section A: Explore hexadecimal conversions to/from decimal and parity
 
 \[ [Link to Lab contents](./README.md#labs) \]
 
-## Hardware Required
+### Part 1: The BC needs to send a command to the Flight Computer
 
-1. 6-inch breadboard (if the Teensy 4.1 is already mounted that is OK).
+* The Flight computer is at address 21
+* The subaddress for the command is 02
+* What are the hex values for 21 and 2?
+* Compare your answer with your lab partner's
+
+### Part 2: We captured a command on the wire
+
+* The address was 11011
+* The subaddress was 00110
+* What are these values in decimal?
+* Compare this answer to your partner's
+
+## Section B: Set up and test the microcontroller
+
+\[ [Link to Lab contents](./README.md#labs) \]
+
+### Hardware Required
+
+1. 6-inch breadboard (if the microcontroller is already mounted that is OK)
     *Do not touch this without anti-static protection!*
-1. Saleae-type Logic Analyzer - technically any analyzer will work, but you are on your own with a different analyzer and/or software.
-1. A small zip-tie if you are working by yourself.
-1. Medium-length breadboard jumper wires.
+1. Saleae-type Logic Analyzer
+1. A small zip-tie if you are working by yourself
+1. Medium-length breadboard jumper wires
 
-## Lab Steps
+### Lab Steps
 
-### Part 1: Software Setup
+#### Part 1: Software Setup
 
 1. Open the Logic 2 analyzer program on the computer.
     * If necessary install the Saleae Logic 2 analyzer software, download it from [Saleae](https://www.saleae.com/downloads).
@@ -39,7 +59,7 @@ https://www.pjrc.com/teensy/package_teensy_index.json.
 1. Click the *Board Manager* icon again in the *Activity Bar* to close the board manager.
 1. Leave the Arduino IDE running while proceeding to the next part.
 
-### Part 2: Set up the Microcontroller
+#### Part 2: Set up the Microcontroller
 
 Note: in the classroom environment the breadboards are usually set up before class with the Teensy 4.1 microcontrollers put in place.
 This is simply to avoid over-handling the Teensy and breaking pins, circuit traces, etc.
@@ -81,7 +101,7 @@ When using non-classroom equipment (your own) put the Teensy in place in step 2.
 1. Connect a jumper wire to H60 for the microcontroller ground.
 1. Connect a jumper wire to H57 for the output signal (microcontroller pin 2).
 
-### Part 3: Set up the Logic Analyzer
+#### Part 3: Set up the Logic Analyzer
 
 1. Saleae-type USB Logic Analyzer: if the logic analyzer does not have the cable pigtail attached, connect the rainbow cable as:
     * black: channel 1
@@ -104,7 +124,7 @@ When using non-classroom equipment (your own) put the Teensy in place in step 2.
 1. Connect the USB cable from the computer to the logic analyzer to power it on.
 1. Launch the Saleae Logic 2 program on the computer and verify it connects to the logic analyzer.
 
-### Part 4: Program and Run the Microcontroller
+#### Part 4: Program and Run the Microcontroller
 
 The Ardunio IDE is used to compile C/C++ code using the Gnu C++ compiler, and upload it to the 
 
@@ -150,7 +170,7 @@ The Ardunio IDE is used to compile C/C++ code using the Gnu C++ compiler, and up
     <br><br>![Teensy Square Wave](./.assets/Lab_04B/teensy-running.jpg)
 
 
-### Part 5: Capture the Output.
+#### Part 5: Capture the Output.
 
 Logic 2 works a bit like an oscilloscope, it can capture up to five channels simultaneously.
 
@@ -172,10 +192,11 @@ Logic 2 works a bit like an oscilloscope, it can capture up to five channels sim
     and then drag the mouse to the end where the voltage stops being low (0 volts).
     The shaded area represents a second of time, and the period of this wave should be shown as 1µs.
 
-### Part 6: Cleanup
+#### Part 6: Cleanup
 
 1. Make sure the anti-static wrist-strap is used for grounding.
 1. Unplug the USB cable from the Saleae logic analyzer to power it off.
 1. Unplug the USB cable from the microcontroller to power it off.
 
 <br><br>![Stop](./.assets/stop_small.png) **Congratulations, you have completed this lab!**
+
