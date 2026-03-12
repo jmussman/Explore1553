@@ -42,8 +42,9 @@ In order to manage the signal on the wire, the application uses this interface.
     ```cpp
 
     // Send to RT 5 subaddress 2 (no particular reason why these numbers)
-    #define REMOTE_TERMINAL_ADDRESS 6
+    #define REMOTE_TERMINAL_ADDRESS 5
     #define SUBADDRESS 2
+    #define WC 5
     ```
 
 1. The rx1553Pin variable will hold which pin on the microcontroller is connected to the
@@ -99,7 +100,7 @@ In order to manage the signal on the wire, the application uses this interface.
         myPacket.clear();
         myPacket.setRta(REMOTE_TERMINAL_ADDRESS);
         myPacket.setSubAddress(SUBADDRESS);
-        myPacket.setWordCount(6);
+        myPacket.setWordCount(WC);
         myPacket.setTrDir((trDir_t)TRANSMIT);
     }
     ```
@@ -142,6 +143,7 @@ In order to manage the signal on the wire, the application uses this interface.
     // Send to RT 5 subaddress 2 (no particular reason why these numbers)
     #define REMOTE_TERMINAL_ADDRESS 6
     #define SUBADDRESS 2
+    #define WC 5
 
     const int rx1553Pin = 6;
 
@@ -157,7 +159,7 @@ In order to manage the signal on the wire, the application uses this interface.
         myPacket.clear();
         myPacket.setRta(REMOTE_TERMINAL_ADDRESS);
         myPacket.setSubAddress(SUBADDRESS);
-        myPacket.setWordCount(6);
+        myPacket.setWordCount(WC);
         myPacket.setTrDir((trDir_t)TRANSMIT);
     }
 
@@ -295,7 +297,7 @@ or by the signal and voltage on an oscilloscope if one is available.
         Serial.println();
         Serial.println("1553 RT Example");
 
-        mailBox1.setData(0, (uint16_t)0x1234);
+        mailBox1.setData(0, 0);
         mailBox1.newMail = true; 
         ;
 

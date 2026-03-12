@@ -81,8 +81,8 @@ This provides a scenario where libraries can be built, shared, and added to the 
 
 1. Make sure the microcontroller and the logic analyzer are not powered.
 
-1. Add another wire (white?) to H51 on the breadboard, pin 3 on the microcontroller.
-1. Connect this to the brown wire on the logic analyzer (channel 2).
+1. Add another wire (white?) to H56 on the breadboard, pin 3 on the microcontroller.
+1. Connect this to the brown wire on the logic analyzer (channel 01).
 1. Power on the microcontroller and the logic analyzer.
 
 #### Part 3: Transmit an MIL-STD-1553 Command Word
