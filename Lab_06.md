@@ -115,9 +115,10 @@ In order to manage the signal on the wire, the application uses this interface.
         digitalWrite(LED_BUILTIN, HIGH);
     ```
 
-1. Use the MIL1553 library bus controller *interface* to send the command word on the wire:
+1. Use the MIL1553 library bus controller *interface* to send the command word on the wire to
+    ask the RT to send data (a request on the BC side is a "send data" request):
     ```cpp
-        myBusController.send(&myPacket, FLEX1553_BUS_A);
+        myBusController.request(&myPacket, FLEX1553_BUS_A);
     ```
 
 1. Execute a command to turn off the board LED.
@@ -282,29 +283,29 @@ or by the signal and voltage on an oscilloscope if one is available.
     MIL_1553_packet mailBox2;
 
     void setup() {
-    Serial.begin(115200);
-    while (!Serial)
+        Serial.begin(115200);
+        while (!Serial)
+            ;
+
+        pinMode(ledPin, OUTPUT);
+
+        if(!myRemoteTemrinal.begin(RTA))
+            Serial.println( "myRemoteTemrinal.begin() failed" );
+
+        Serial.println();
+        Serial.println("1553 RT Example");
+
+        mailBox1.setData(0, (uint16_t)0x1234);
+        mailBox1.newMail = true; 
         ;
 
-    pinMode(ledPin, OUTPUT);
+        if(!myRemoteTemrinal.openMailbox(MB1_SA, MB1_WC, MIL_1553_RT_OUTGOING, &mailBox1))
+            Serial.println("Open mailbox1 failed");
 
-    if(!myRemoteTemrinal.begin(RTA))
-        Serial.println( "myRemoteTemrinal.begin() failed" );
-
-    Serial.println();
-    Serial.println("1553 RT Example");
-
-    mailBox1.setData(0, (uint16_t)0x1234);
-    mailBox1.newMail = true; 
-    ;
-
-    if(!myRemoteTemrinal.openMailbox(MB1_SA, MB1_WC, MIL_1553_RT_OUTGOING, &mailBox1))
-        Serial.println("Open mailbox1 failed");
-
-    uint16_t data[] = {0x0012, 0x0034, 0x0056, 0x0078, 0x0910};
-    mailBox2.setData(data, MB2_WC);
-    if(!myRemoteTemrinal.openMailbox(MB2_SA, MB2_WC, MIL_1553_RT_OUTGOING, &mailBox2))
-        Serial.println("Open mailbox2 failed");
+        uint16_t data[] = {0x0012, 0x0034, 0x0056, 0x0078, 0x0910};
+        mailBox2.setData(data, MB2_WC);
+        if(!myRemoteTemrinal.openMailbox(MB2_SA, MB2_WC, MIL_1553_RT_OUTGOING, &mailBox2))
+            Serial.println("Open mailbox2 failed");
     }
 
     void loop()
