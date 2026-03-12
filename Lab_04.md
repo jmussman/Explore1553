@@ -4,11 +4,13 @@
 
 # Lab 4: Physical (Signaling) Layer
 
-## Section A: Explore hexadecimal conversions to/from decimal and parity
+## Section A: Explore conversions to/from decimal hexadecimal and parity
 
-\[ [Link to Lab contents](./README.md#labs) \]
+\[ [Lab Table of Contents](./README.md#labs) \]
 
-### Part 1: The BC needs to send a command to the Flight Computer
+### Part 1: The BC needs to send a Command Word to the Flight Computer
+
+The structure of a Command Word is not important right now, just the numbers:
 
 * The Flight computer is at address 21
 * The subaddress for the command is 02
@@ -24,14 +26,12 @@
 
 ## Section B: Set up and test the microcontroller
 
-\[ [Link to Lab contents](./README.md#labs) \]
-
 ### Hardware Required
 
 1. 6-inch breadboard (if the microcontroller is already mounted that is OK)
     *Do not touch this without anti-static protection!*
 1. Saleae-type Logic Analyzer
-1. A small zip-tie if you are working by yourself
+1. If you are working by yourself a small zip-tie (to set up the logic analyzer)
 1. Medium-length breadboard jumper wires
 
 ### Lab Steps

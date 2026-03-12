@@ -2,12 +2,11 @@
 [//]: # (Copyright © 2026 Joel A Mussman. All rights reserved.)
 [//]: #
 
-# Lab 5:
+# Lab 5: Data Link Layer
 
-\[ [Link to Lab contents](./README.md#labs) \]
+\[ [Lab Table of Contents](./README.md#labs) \]
 
-
-## Build words and calculate parity
+## Decipher and build words
 
 1. Build the BC command word from the following values and calculate the parity:
     * RT address 03
@@ -20,6 +19,7 @@
     * Transmit data
     * Subaddress: 01
     * Word count: 01
+
 1. Build the BC command word from the following values and calculate the parity:
     * RT address: 07
     * Status: busy Flag Set
@@ -31,12 +31,11 @@ Answer key:
 3.3: **00111 0 00000 1 0001, 0**<br>
 
 
-## Use the microcontroller to send an RT to BC message
-
+## Implement a BC in the microcontroller and send an RT to BC message
 
 ### Hardware Required
 
-1. The breadboard setup from the completion of Lab 4B.
+1. The breadboard setup from the completion of Lab 4.
     *Do not touch this without anti-static protection!*
 
 ### Lab Steps
@@ -54,9 +53,9 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. Click the green button to expand the *Code dialog*.
 1. Make sure the *Local* tab is selected and click on the *Download ZIP* option:
     <br><br>![GitHub Code Button](./.assets/Lab_05/github-code-button.png)
-1. Extract the zip file to the *Documents/Arduino/libraries* folder on the computer.
-1. Rename the extracted folder from *Explore1553-master* to just *Flex1553*.
-1. Open the Viusal Studio Code application.
+1. Extract the zip file to your *Documents/Arduino/libraries* folder on the computer.
+1. Rename the extracted folder from *Explore1553* to just *Explore1553*.
+1. Open the Visusal Studio Code application.
 1. In VS Code, open the *Documents/Arduino/libraries/Explore1553* folder.
 1. The repository is missing a properties file that Arduino looks for.
     Use the **File > New File...** menu option to start creating a new file.
@@ -89,8 +88,8 @@ This provides a scenario where libraries can be built, shared, and added to the 
 #### Part 3: Transmit an MIL-STD-1553 Command Word
 
 1. In Arduino IDE navigate and click **File > New Sketch**.
-
     Programs are called "sketches" in Arduino.
+    
 1. New Sketch opens a new window, close the previous window.
 1. Copy and paste this content into the new sketch file:
     ```cpp
@@ -151,7 +150,7 @@ This provides a scenario where libraries can be built, shared, and added to the 
 1. Verify the checksum is correct, if it is not then the word is garbage.
 1. Because this is a command or status word, figure out what the bits mean.
 
-#### Part 5: BC to RT
+#### Part 5: Change BC to send BC to RT
 
 1. The previous command was RT to BC, initiated by the BC of course.
     Navigate to **File > Save As...** and save the file with as *BC_RC_Repeat_Command*.

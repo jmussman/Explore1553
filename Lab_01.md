@@ -6,7 +6,7 @@
 
 ## Research the following questions:
 
-\[ [Link to Lab contents](./README.md#labs) \]
+\[ [Lab Table of Contents](./README.md#labs) \]
 
 As a group, or individually, research the following questions:
 

@@ -6,7 +6,7 @@
 
 ## Build a bus
 
-\[ [Link to Lab contents](./README.md#labs) \]
+\[ [Lab Table of Contents](./README.md#labs) \]
 
 ### Part 1: Sketch a compliant A/B bus for 6 RTs
 

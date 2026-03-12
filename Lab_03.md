@@ -6,7 +6,7 @@
 
 ## Simulate a physical bus network and check its characteristics
 
-\[ [Link to Lab contents](./README.md#labs) \]
+\[ [Lab Table of Contents](./README.md#labs) \]
 
 ### Hardware Required
 
